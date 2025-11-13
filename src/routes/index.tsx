@@ -16,14 +16,17 @@ const fetchData = async () => {
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Title>Metro Lisboa</Title>
+      <nav>
+      <img />
       <h1>Welcome to Metro Lisboa</h1>
-      <h2>Get data:</h2>
-      <button onClick={async () => {
-        const data = await fetchData();
-        console.log(data);
-      }}>Fetch Metro Data</button>
-    </>
+      </nav>
+      
+
+      <div class="status-container">
+        <h2>Estado da Rede:</h2>
+      </div>
+    </main>
   );
 }

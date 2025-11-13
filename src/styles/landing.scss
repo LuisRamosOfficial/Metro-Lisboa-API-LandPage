@@ -1,8 +1,19 @@
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+@import "./variables.scss";
+
+
+main {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    .status-container {
+        background-color: var(--color);
+        width: 80%;
+        border-radius: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
